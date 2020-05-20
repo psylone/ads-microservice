@@ -8,8 +8,8 @@ gem 'rake', '~> 13.0.1'
 
 gem 'puma', '~> 4.3.0'
 
-gem 'sinatra', '~> 2.0.8', require: 'sinatra/base'
-gem 'sinatra-contrib', '~> 2.0.8'
+gem 'sinatra', '~> 2.0.0', require: 'sinatra/base'
+gem 'sinatra-contrib', '~> 2.0.0'
 
 gem 'i18n', '~> 1.8.2'
 gem 'config', '~> 2.2.1'
