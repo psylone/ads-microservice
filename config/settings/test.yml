@@ -1,2 +1,6 @@
-database:
-  url: 'postgres://postgres@localhost/ads_test'
+db:
+  adapter: postgres
+  host: localhost
+  user: postgres
+  database: ads_test
+  max_connections: 1
