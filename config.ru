@@ -1,8 +1,3 @@
-ENV['RACK_ENV'] ||= 'development'
+require_relative 'config/environment'
 
-require 'bundler/setup'
-Bundler.require(:default, ENV['RACK_ENV'])
-
-require_relative 'config/application'
-
-run Application
+run AdRoutes

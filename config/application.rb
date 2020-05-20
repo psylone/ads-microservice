@@ -8,8 +8,4 @@ class Application < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
   end
-
-  get '/' do
-    json status: :ok
-  end
 end
