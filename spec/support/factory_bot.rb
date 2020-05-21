@@ -5,3 +5,5 @@ RSpec.configure do |config|
     FactoryBot.find_definitions
   end
 end
+
+FactoryBot.define { to_create { |model| model.save } }
