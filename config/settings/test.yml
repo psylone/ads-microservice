@@ -2,5 +2,5 @@ db:
   adapter: postgres
   host: localhost
   user: postgres
-  database: ads_test
+  database: ads_microservice_test
   max_connections: 1
