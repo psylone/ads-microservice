@@ -37,6 +37,12 @@ RACK_ENV=test bin/rake db:migrate
 bin/puma
 ```
 
+# Запуск консоли приложения
+
+```
+bin/console
+```
+
 # Запуск тестов
 
 ```
