@@ -1,6 +1,2 @@
 db:
-  adapter: postgres
-  host: localhost
-  user: postgres
   database: ads_microservice_development
-  max_connections: 5
