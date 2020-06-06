@@ -4,15 +4,15 @@ module Auth
   AUTH_TOKEN = %r{\ABearer (?<token>.+)\z}
 
   def user_id
-    user_id = ads.auth(matched_token)
+    user_id = auth_service.auth(matched_token)
     raise Unauthorized if user_id.blank?
     user_id
   end
 
   private
 
-  def ads
-    @ads ||= Ads::Client.new
+  def auth_service
+    @auth_service ||= AuthService::Client.new
   end
 
   def matched_token

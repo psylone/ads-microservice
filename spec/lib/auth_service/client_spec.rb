@@ -1,4 +1,4 @@
-RSpec.describe Ads::Client, type: :client do
+RSpec.describe AuthService::Client, type: :client do
   subject { described_class.new(connection: connection) }
 
   let(:status) { 200 }

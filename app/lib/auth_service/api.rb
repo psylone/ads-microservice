@@ -1,4 +1,4 @@
-module Ads
+module AuthService
   module Api
     def auth(token)
       response = connection.post('auth') do |request|

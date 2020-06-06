@@ -17,15 +17,15 @@ RSpec.describe AdRoutes, type: :routes do
   describe 'POST /v1' do
     let(:user_id) { 101 }
     let(:auth_token) { 'auth.token' }
-    let(:ads_client) { instance_double('Ads client') }
+    let(:auth_service) { instance_double('Auth service') }
 
     before do
-      allow(ads_client).to receive(:auth)
+      allow(auth_service).to receive(:auth)
         .with(auth_token)
         .and_return(user_id)
 
-      allow(Ads::Client).to receive(:new)
-        .and_return(ads_client)
+      allow(AuthService::Client).to receive(:new)
+        .and_return(auth_service)
 
       header 'Authorization', "Bearer #{auth_token}"
     end
