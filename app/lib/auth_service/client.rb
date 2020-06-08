@@ -6,7 +6,7 @@ module AuthService
     extend Dry::Initializer[undefined: false]
     include Api
 
-    option :url, default: proc { 'http://localhost:3010/v1' }
+    option :url, default: proc { Settings.service.auth.url }
     option :connection, default: proc { build_connection }
 
     private
