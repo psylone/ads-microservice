@@ -19,7 +19,7 @@ module Ads
 
       if @ad.valid?
         @ad.save
-        @geocoder_service.geocode_async(@ad.city)
+        @geocoder_service.geocode_later(@ad)
       else
         fail!(@ad.errors)
       end

@@ -8,7 +8,15 @@ module GeocoderService
     private
 
     def create_queue
-      RabbitMq.queue('geocoding', durable: true)
+      channel = RabbitMq.channel
+      channel.queue('geocoding', durable: true)
+    end
+
+    def publish(payload, opts = {})
+      queue.publish(
+        payload,
+        opts.merge(persistent: true, app_id: 'ads')
+      )
     end
   end
 end

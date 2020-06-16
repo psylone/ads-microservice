@@ -2,6 +2,8 @@ db:
   adapter: postgresql
   host: localhost
   user: postgres
+rabbitmq:
+  consumer_pool: 10
 pagination:
   page_size: 10
 service:
