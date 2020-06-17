@@ -13,7 +13,7 @@ module GeocoderService
     end
 
     def publish(payload, opts = {})
-      queue.publish(
+      @queue.publish(
         payload,
         opts.merge(persistent: true, app_id: 'ads')
       )
