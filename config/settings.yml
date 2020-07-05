@@ -1,3 +1,5 @@
+app:
+  name: ads
 db:
   adapter: postgresql
   host: localhost
