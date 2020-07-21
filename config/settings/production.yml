@@ -1,0 +1,5 @@
+db:
+  database: ads_microservice_production
+  url: <%= ENV.fetch('DATABASE_URL') %>
+rabbitmq:
+  host: <%= ENV.fetch('RABBITMQ_HOST') %>
