@@ -13,6 +13,7 @@ gem 'faraday', '~> 1.0.1'
 gem 'faraday_middleware', '~> 1.0.0'
 gem 'rack-ougai', '~> 0.2.1'
 gem 'rack-request-id', '~> 0.0.4'
+gem 'prometheus-client', '~> 2.1.0'
 
 gem 'i18n', '~> 1.8.2'
 gem 'config', '~> 2.2.1'
