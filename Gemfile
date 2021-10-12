@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'rake', '~> 13.0.1'
-gem 'puma', '~> 4.3.8'
+gem 'puma', '~> 4.3.9'
 
 gem 'sinatra', '~> 2.0.0', require: 'sinatra/base'
 gem 'sinatra-contrib', '~> 2.0.0'
